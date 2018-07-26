@@ -1,0 +1,19 @@
+<style>
+  table {border-collapse: collapse;}
+  table, th, td {border: 1px solid black;}
+  th, td {padding: 10px;}
+</style>
+<h2>PHOENIX_HELLOWORLD</h2>
+<table>
+<tr><td>TIME</td><td>UTC <%= Time.utc_now() %></td></tr>
+<tr><td>VIRTUAL_HOST</td><td><%= System.get_env("VIRTUAL_HOST") || "NA" %></td></tr>
+<tr>
+  <td>SOURCE</td>
+  <td>
+    <a target="_blank" href="https://github.com/casmacc/phoenix_helloworld">
+      http://github.com/casmacc/phoenix_helloworld
+    </a>
+  </td>
+</tr>
+</table>
+
